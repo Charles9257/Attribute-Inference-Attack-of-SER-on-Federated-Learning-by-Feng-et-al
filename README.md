@@ -138,7 +138,7 @@ tested on the other half (2-fold, UAR %, private FL fold 1):
    EmoDB and RAVDESS are acted corpora and much easier than IEMOCAP and MSP-Improv.
 2. **The cross-corpus attack does not reproduce.** With shadow models trained on the other two
    corpora, the first-layer attack stays at chance (43–56% UAR). The paper reports 74–91%. The
-   attack model reaches 64–73% on its own shadow validation split, but that split is a random 80/20
+   attack model reaches 57–75% (first layer) and up to 91% (last layer) on its own shadow validation split, but that split is a random 80/20
    split of updates (paper protocol), so the same clients appear in training and validation. That
    score largely measures client memorisation, not generalisation to new speakers.
 3. **The updates still leak gender.** When the shadow data comes from the same corpus (supplementary
