@@ -1,0 +1,145 @@
+== D_p=emodb  D_s=crema-d+ravdess  fed_avg  lr=0.0005
+shadow model 0: 167 clients, record every 7 rounds
+  round   0  val_uar 0.412  test_acc 0.451  test_uar 0.449
+  round  50  val_uar 0.705  test_acc 0.714  test_uar 0.712
+  round 100  val_uar 0.720  test_acc 0.726  test_uar 0.725
+  round 150  val_uar 0.734  test_acc 0.720  test_uar 0.717
+  round 199  val_uar 0.736  test_acc 0.728  test_uar 0.727
+shadow model 1: 168 clients, record every 7 rounds
+  round   0  val_uar 0.424  test_acc 0.455  test_uar 0.452
+  round  50  val_uar 0.721  test_acc 0.734  test_uar 0.727
+  round 100  val_uar 0.739  test_acc 0.760  test_uar 0.758
+  round 150  val_uar 0.738  test_acc 0.775  test_uar 0.772
+  round 199  val_uar 0.746  test_acc 0.782  test_uar 0.778
+shadow model 2: 168 clients, record every 7 rounds
+  round   0  val_uar 0.434  test_acc 0.451  test_uar 0.448
+  round  50  val_uar 0.734  test_acc 0.713  test_uar 0.707
+  round 100  val_uar 0.752  test_acc 0.742  test_uar 0.738
+  round 150  val_uar 0.745  test_acc 0.749  test_uar 0.743
+  round 199  val_uar 0.758  test_acc 0.768  test_uar 0.764
+shadow model 3: 168 clients, record every 7 rounds
+  round   0  val_uar 0.430  test_acc 0.449  test_uar 0.445
+  round  50  val_uar 0.709  test_acc 0.742  test_uar 0.740
+  round 100  val_uar 0.734  test_acc 0.762  test_uar 0.761
+  round 150  val_uar 0.730  test_acc 0.775  test_uar 0.772
+  round 199  val_uar 0.758  test_acc 0.769  test_uar 0.767
+shadow model 4: 173 clients, record every 7 rounds
+  round   0  val_uar 0.430  test_acc 0.472  test_uar 0.467
+  round  50  val_uar 0.715  test_acc 0.739  test_uar 0.735
+  round 100  val_uar 0.730  test_acc 0.759  test_uar 0.756
+  round 150  val_uar 0.737  test_acc 0.775  test_uar 0.770
+  round 199  val_uar 0.750  test_acc 0.776  test_uar 0.772
+shadow updates: 2349 (male share 0.51)
+    [first] epoch  0 train_loss 0.921 val_loss 0.693 val_acc 0.526 val_uar 0.525 (374s)
+    [first] epoch  1 train_loss 0.793 val_loss 0.691 val_acc 0.545 val_uar 0.543 (367s)
+    [first] epoch  2 train_loss 0.762 val_loss 0.699 val_acc 0.528 val_uar 0.516 (371s)
+    [first] epoch  3 train_loss 0.731 val_loss 0.694 val_acc 0.498 val_uar 0.510 (370s)
+    [first] epoch  4 train_loss 0.729 val_loss 0.684 val_acc 0.519 val_uar 0.507 (376s)
+    [first] epoch  5 train_loss 0.721 val_loss 0.695 val_acc 0.513 val_uar 0.521 (369s)
+    [first] epoch  6 train_loss 0.719 val_loss 0.682 val_acc 0.609 val_uar 0.611 (367s)
+    [first] epoch  7 train_loss 0.710 val_loss 0.669 val_acc 0.626 val_uar 0.629 (363s)
+  best val (first): {'epoch': 7, 'acc': 0.625531914893617, 'uar': 0.6293101886245448}
+    [second] epoch  0 train_loss 0.885 val_loss 0.692 val_acc 0.528 val_uar 0.531 (40s)
+    [second] epoch  1 train_loss 0.763 val_loss 0.692 val_acc 0.519 val_uar 0.520 (34s)
+    [second] epoch  2 train_loss 0.726 val_loss 0.686 val_acc 0.577 val_uar 0.578 (34s)
+    [second] epoch  3 train_loss 0.713 val_loss 0.687 val_acc 0.581 val_uar 0.587 (34s)
+    [second] epoch  4 train_loss 0.721 val_loss 0.689 val_acc 0.517 val_uar 0.506 (35s)
+    [second] epoch  5 train_loss 0.717 val_loss 0.688 val_acc 0.545 val_uar 0.549 (36s)
+    [second] epoch  6 train_loss 0.707 val_loss 0.688 val_acc 0.555 val_uar 0.560 (35s)
+    [second] epoch  7 train_loss 0.706 val_loss 0.686 val_acc 0.555 val_uar 0.555 (35s)
+    [second] epoch  8 train_loss 0.690 val_loss 0.686 val_acc 0.555 val_uar 0.554 (34s)
+    [second] epoch  9 train_loss 0.692 val_loss 0.685 val_acc 0.560 val_uar 0.560 (34s)
+    [second] epoch 10 train_loss 0.695 val_loss 0.686 val_acc 0.560 val_uar 0.561 (36s)
+    [second] epoch 11 train_loss 0.693 val_loss 0.686 val_acc 0.564 val_uar 0.565 (34s)
+    [second] epoch 12 train_loss 0.690 val_loss 0.684 val_acc 0.572 val_uar 0.571 (35s)
+    [second] epoch 13 train_loss 0.691 val_loss 0.683 val_acc 0.596 val_uar 0.595 (36s)
+    [second] epoch 14 train_loss 0.688 val_loss 0.682 val_acc 0.577 val_uar 0.577 (35s)
+    [second] epoch 15 train_loss 0.694 val_loss 0.681 val_acc 0.600 val_uar 0.601 (35s)
+    [second] epoch 16 train_loss 0.680 val_loss 0.681 val_acc 0.611 val_uar 0.611 (35s)
+    [second] epoch 17 train_loss 0.696 val_loss 0.680 val_acc 0.587 val_uar 0.588 (34s)
+    [second] epoch 18 train_loss 0.690 val_loss 0.680 val_acc 0.594 val_uar 0.594 (34s)
+    [second] epoch 19 train_loss 0.687 val_loss 0.681 val_acc 0.587 val_uar 0.584 (34s)
+    [second] epoch 20 train_loss 0.688 val_loss 0.680 val_acc 0.591 val_uar 0.591 (35s)
+    [second] epoch 21 train_loss 0.688 val_loss 0.680 val_acc 0.589 val_uar 0.588 (35s)
+    [second] epoch 22 train_loss 0.690 val_loss 0.680 val_acc 0.589 val_uar 0.588 (34s)
+    [second] epoch 23 train_loss 0.680 val_loss 0.679 val_acc 0.589 val_uar 0.588 (35s)
+    [second] epoch 24 train_loss 0.681 val_loss 0.679 val_acc 0.583 val_uar 0.583 (35s)
+    [second] epoch 25 train_loss 0.681 val_loss 0.679 val_acc 0.583 val_uar 0.583 (33s)
+    [second] epoch 26 train_loss 0.684 val_loss 0.680 val_acc 0.602 val_uar 0.603 (34s)
+    [second] epoch 27 train_loss 0.678 val_loss 0.680 val_acc 0.587 val_uar 0.587 (35s)
+    [second] epoch 28 train_loss 0.685 val_loss 0.679 val_acc 0.583 val_uar 0.583 (35s)
+    [second] epoch 29 train_loss 0.683 val_loss 0.679 val_acc 0.589 val_uar 0.590 (34s)
+  best val (second): {'epoch': 16, 'acc': 0.6106382978723405, 'uar': 0.6113084129083695}
+    [last] epoch  0 train_loss 0.842 val_loss 0.689 val_acc 0.536 val_uar 0.532 (2s)
+    [last] epoch  1 train_loss 0.754 val_loss 0.683 val_acc 0.564 val_uar 0.569 (2s)
+    [last] epoch  2 train_loss 0.730 val_loss 0.686 val_acc 0.564 val_uar 0.571 (2s)
+    [last] epoch  3 train_loss 0.720 val_loss 0.691 val_acc 0.534 val_uar 0.543 (2s)
+    [last] epoch  4 train_loss 0.703 val_loss 0.681 val_acc 0.587 val_uar 0.588 (2s)
+    [last] epoch  5 train_loss 0.704 val_loss 0.683 val_acc 0.596 val_uar 0.598 (2s)
+    [last] epoch  6 train_loss 0.707 val_loss 0.685 val_acc 0.549 val_uar 0.559 (2s)
+    [last] epoch  7 train_loss 0.699 val_loss 0.678 val_acc 0.604 val_uar 0.599 (2s)
+    [last] epoch  8 train_loss 0.698 val_loss 0.686 val_acc 0.551 val_uar 0.561 (2s)
+    [last] epoch  9 train_loss 0.689 val_loss 0.692 val_acc 0.513 val_uar 0.525 (2s)
+    [last] epoch 10 train_loss 0.700 val_loss 0.682 val_acc 0.560 val_uar 0.569 (2s)
+    [last] epoch 11 train_loss 0.682 val_loss 0.668 val_acc 0.647 val_uar 0.649 (2s)
+    [last] epoch 12 train_loss 0.672 val_loss 0.670 val_acc 0.600 val_uar 0.608 (2s)
+    [last] epoch 13 train_loss 0.661 val_loss 0.665 val_acc 0.636 val_uar 0.642 (2s)
+    [last] epoch 14 train_loss 0.666 val_loss 0.654 val_acc 0.655 val_uar 0.660 (2s)
+    [last] epoch 15 train_loss 0.650 val_loss 0.644 val_acc 0.662 val_uar 0.666 (2s)
+    [last] epoch 16 train_loss 0.652 val_loss 0.638 val_acc 0.668 val_uar 0.670 (2s)
+    [last] epoch 17 train_loss 0.623 val_loss 0.646 val_acc 0.634 val_uar 0.641 (2s)
+    [last] epoch 18 train_loss 0.615 val_loss 0.609 val_acc 0.662 val_uar 0.658 (2s)
+    [last] epoch 19 train_loss 0.588 val_loss 0.600 val_acc 0.704 val_uar 0.707 (2s)
+    [last] epoch 20 train_loss 0.577 val_loss 0.582 val_acc 0.730 val_uar 0.730 (2s)
+    [last] epoch 21 train_loss 0.566 val_loss 0.581 val_acc 0.732 val_uar 0.734 (2s)
+    [last] epoch 22 train_loss 0.529 val_loss 0.565 val_acc 0.721 val_uar 0.719 (2s)
+    [last] epoch 23 train_loss 0.521 val_loss 0.549 val_acc 0.723 val_uar 0.721 (2s)
+    [last] epoch 24 train_loss 0.498 val_loss 0.537 val_acc 0.734 val_uar 0.732 (2s)
+    [last] epoch 25 train_loss 0.502 val_loss 0.535 val_acc 0.755 val_uar 0.757 (2s)
+    [last] epoch 26 train_loss 0.481 val_loss 0.515 val_acc 0.762 val_uar 0.761 (2s)
+    [last] epoch 27 train_loss 0.461 val_loss 0.513 val_acc 0.762 val_uar 0.762 (2s)
+    [last] epoch 28 train_loss 0.438 val_loss 0.515 val_acc 0.768 val_uar 0.766 (2s)
+    [last] epoch 29 train_loss 0.417 val_loss 0.516 val_acc 0.766 val_uar 0.768 (2s)
+  best val (last): {'epoch': 29, 'acc': 0.7659574468085106, 'uar': 0.7676529743245937}
+private fold 0: 40 clients
+  round   0  val_uar 0.257  test_acc 0.383  test_uar 0.397
+  round  50  val_uar 0.774  test_acc 0.864  test_uar 0.856
+  round 100  val_uar 0.805  test_acc 0.926  test_uar 0.925
+  round 150  val_uar 0.790  test_acc 0.926  test_uar 0.925
+  round 199  val_uar 0.838  test_acc 0.926  test_uar 0.925
+   {'fold': 1, 'n_updates': 400, 'ser_acc': 0.9259259259259259, 'ser_uar': 0.9252136752136753, 'attack_first_acc': 0.38, 'attack_first_uar': 0.38647342995169087, 'attack_first_client_asr': np.float64(0.40625359730139143), 'attack_second_acc': 0.375, 'attack_second_uar': 0.375805152979066, 'attack_second_client_asr': np.float64(0.3930610851566734), 'attack_last_acc': 0.4325, 'attack_last_uar': 0.4407206119162641, 'attack_last_client_asr': np.float64(0.4486577107532989)}
+private fold 1: 40 clients
+  round   0  val_uar 0.293  test_acc 0.294  test_uar 0.356
+  round  50  val_uar 0.878  test_acc 0.824  test_uar 0.779
+  round 100  val_uar 0.878  test_acc 0.843  test_uar 0.785
+  round 150  val_uar 0.896  test_acc 0.882  test_uar 0.852
+  round 199  val_uar 0.933  test_acc 0.902  test_uar 0.884
+   {'fold': 2, 'n_updates': 400, 'ser_acc': 0.9019607843137255, 'ser_uar': 0.8837046106067845, 'attack_first_acc': 0.4225, 'attack_first_uar': 0.427218370013064, 'attack_first_client_asr': np.float64(0.42710172996937706), 'attack_second_acc': 0.44, 'attack_second_uar': 0.4432217867551, 'attack_second_client_asr': np.float64(0.4297242912316442), 'attack_last_acc': 0.49, 'attack_last_uar': 0.4934679931665159, 'attack_last_client_asr': np.float64(0.5007834485775662)}
+private fold 2: 40 clients
+  round   0  val_uar 0.304  test_acc 0.228  test_uar 0.273
+  round  50  val_uar 0.807  test_acc 0.807  test_uar 0.753
+  round 100  val_uar 0.867  test_acc 0.825  test_uar 0.807
+  round 150  val_uar 0.936  test_acc 0.825  test_uar 0.849
+  round 199  val_uar 0.873  test_acc 0.860  test_uar 0.842
+   {'fold': 3, 'n_updates': 400, 'ser_acc': 0.8245614035087719, 'ser_uar': 0.8489130434782609, 'attack_first_acc': 0.4725, 'attack_first_uar': 0.4911784068466096, 'attack_first_client_asr': np.float64(0.4511400180701651), 'attack_second_acc': 0.4925, 'attack_second_uar': 0.4980250164581962, 'attack_second_client_asr': np.float64(0.48187565702271584), 'attack_last_acc': 0.44, 'attack_last_uar': 0.4599078341013825, 'attack_last_client_asr': np.float64(0.43354998147277557)}
+private fold 3: 40 clients
+  round   0  val_uar 0.210  test_acc 0.312  test_uar 0.336
+  round  50  val_uar 0.819  test_acc 0.857  test_uar 0.847
+  round 100  val_uar 0.817  test_acc 0.844  test_uar 0.831
+  round 150  val_uar 0.867  test_acc 0.857  test_uar 0.859
+  round 199  val_uar 0.867  test_acc 0.870  test_uar 0.868
+   {'fold': 4, 'n_updates': 400, 'ser_acc': 0.8571428571428571, 'ser_uar': 0.8593253968253968, 'attack_first_acc': 0.415, 'attack_first_uar': 0.3963903743315508, 'attack_first_client_asr': np.float64(0.43529408908085376), 'attack_second_acc': 0.47, 'attack_second_uar': 0.464795008912656, 'attack_second_client_asr': np.float64(0.49435614834511893), 'attack_last_acc': 0.5575, 'attack_last_uar': 0.5382130124777184, 'attack_last_client_asr': np.float64(0.5393143702702526)}
+private fold 4: 40 clients
+  round   0  val_uar 0.190  test_acc 0.384  test_uar 0.403
+  round  50  val_uar 0.752  test_acc 0.836  test_uar 0.824
+  round 100  val_uar 0.790  test_acc 0.863  test_uar 0.853
+  round 150  val_uar 0.812  test_acc 0.849  test_uar 0.844
+  round 199  val_uar 0.790  test_acc 0.849  test_uar 0.844
+   {'fold': 5, 'n_updates': 400, 'ser_acc': 0.8356164383561644, 'ser_uar': 0.8280569172113289, 'attack_first_acc': 0.465, 'attack_first_uar': 0.45964832614344464, 'attack_first_client_asr': np.float64(0.47505787717184783), 'attack_second_acc': 0.515, 'attack_second_uar': 0.5129796412623931, 'attack_second_client_asr': np.float64(0.537919539610716), 'attack_last_acc': 0.5375, 'attack_last_uar': 0.5268170236383359, 'attack_last_client_asr': np.float64(0.5283455515073162)}
+      fold  n_updates   ser_acc   ser_uar  attack_first_acc  attack_first_uar  attack_first_client_asr  attack_second_acc  attack_second_uar  attack_second_client_asr  attack_last_acc  attack_last_uar  attack_last_client_asr
+0        1      400.0  0.925926  0.925214            0.3800          0.386473                 0.406254             0.3750           0.375805                  0.393061           0.4325         0.440721                0.448658
+1        2      400.0  0.901961  0.883705            0.4225          0.427218                 0.427102             0.4400           0.443222                  0.429724           0.4900         0.493468                0.500783
+2        3      400.0  0.824561  0.848913            0.4725          0.491178                 0.451140             0.4925           0.498025                  0.481876           0.4400         0.459908                0.433550
+3        4      400.0  0.857143  0.859325            0.4150          0.396390                 0.435294             0.4700           0.464795                  0.494356           0.5575         0.538213                0.539314
+4        5      400.0  0.835616  0.828057            0.4650          0.459648                 0.475058             0.5150           0.512980                  0.537920           0.5375         0.526817                0.528346
+5  average      400.0  0.869041  0.869043            0.4310          0.432182                 0.438969             0.4585           0.458965                  0.467387           0.4915         0.491825                0.490130
