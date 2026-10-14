@@ -32,6 +32,8 @@ Everything here was re-implemented from the paper and the official code, and it 
 
 ## Results
 
+To browse every table and plot, open [`notebooks/results_viewer.ipynb`](notebooks/results_viewer.ipynb). It is already executed and renders on GitHub. To re-run it locally: `pip install jupyter matplotlib && jupyter notebook notebooks/results_viewer.ipynb`.
+
 All numbers are means over the 5 private speaker folds. The paper reports the success rate
 (≈ accuracy); we report UAR. Per-update accuracy and the paper-style per-client success rate are
 in each `private_results.csv`.
@@ -192,5 +194,6 @@ src/attack.py            normalisation, attack training and evaluation
 src/pipeline.py          one (D_p, FL algorithm, normalisation) setting end-to-end
 src/summarize.py         builds results/summary.md next to the paper's numbers
 src/probe_indomain.py    supplementary: speaker-disjoint, same-corpus linear probe
+notebooks/results_viewer.ipynb  tables and plots of all saved results vs the paper
 results/<norm>/<fl>/<D_p>/  private_results.csv (per fold), attack_train_*.csv, meta.json, log.txt
 ```

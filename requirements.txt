@@ -4,3 +4,4 @@ pandas
 scikit-learn
 opensmile
 audb   # only to download EmoDB
+matplotlib  # notebook only
