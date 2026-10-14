@@ -14,12 +14,14 @@ from data import build_clients
 from fl_train import run_fl
 from attack import norm_stats, train_attack, predict, scores
 
-ALL = ['crema-d', 'ravdess', 'emodb']
+ALL = ['crema-d', 'ravdess', 'emodb', 'iemocap', 'msp-improv']
 LR = {'fed_sgd': 0.05, 'fed_avg': 0.0005}
 
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--private', required=True, choices=ALL)
+    ap.add_argument('--corpora', default='crema-d,ravdess,emodb',
+                    help='the three corpora of the rotation; paper: iemocap,crema-d,msp-improv')
     ap.add_argument('--mode', required=True, choices=['fed_sgd', 'fed_avg'])
     ap.add_argument('--feat_dir', default='features/emobase')
     ap.add_argument('--out_dir', default='results')
@@ -39,7 +41,7 @@ if __name__ == '__main__':
     def log(*s):
         msg = ' '.join(map(str, s)); print(msg, flush=True); logf.write(msg + '\n'); logf.flush()
 
-    shadow_ds = [d for d in ALL if d != a.private]
+    shadow_ds = [d for d in a.corpora.split(',') if d != a.private]
     lr = LR[a.mode]
     log(f'== D_p={a.private}  D_s={"+".join(shadow_ds)}  {a.mode}  lr={lr}')
 

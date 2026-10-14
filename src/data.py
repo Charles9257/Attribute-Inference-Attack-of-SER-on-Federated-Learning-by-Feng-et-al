@@ -11,7 +11,7 @@ from sklearn.model_selection import KFold
 
 # number of clients each speaker is split into (paper: 10 for IEMOCAP / MSP-Improv).
 # RAVDESS and EmoDB only have ~28-34 4-class utterances per speaker, so we use 5.
-SPLITS = {'crema-d': 1, 'ravdess': 5, 'emodb': 5}
+SPLITS = {'crema-d': 1, 'ravdess': 5, 'emodb': 5, 'iemocap': 10, 'msp-improv': 10}
 
 
 def load(feat_dir, dataset, norm='speaker', train_speakers=None):

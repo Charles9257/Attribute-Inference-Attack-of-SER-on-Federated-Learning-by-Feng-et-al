@@ -62,14 +62,50 @@ def list_emodb(root):
     return rows
 
 
+def list_iemocap(root):
+    # official layout: <root>/Session{1..5}/dialog/EmoEvaluation/*.txt and sentences/wav/<dialog>/<utt>.wav
+    # paper: improvised sessions only, exc merged into hap; speaker = session + gender
+    import re
+    m = {'neu': 'neu', 'hap': 'hap', 'exc': 'hap', 'sad': 'sad', 'ang': 'ang'}
+    wavs = {p.stem: p for p in Path(root).rglob('*.wav')}
+    rows = []
+    for ev in sorted(Path(root).rglob('EmoEvaluation/*.txt')):
+        for line in open(ev, errors='ignore'):
+            r = re.match(r'\[.*?\]\t(Ses\w+)\t(\w+)\t', line)
+            if not r: continue
+            utt, emo = r.group(1), r.group(2)
+            if emo not in m or 'impro' not in utt or utt not in wavs: continue
+            g = utt.split('_')[-1][0]
+            rows.append((wavs[utt], m[emo], g, utt[:5] + g))
+    return rows
+
+
+def list_msp_improv(root):
+    # official layout: <root>/Evalution.txt (sic) + Audio/**/MSP-IMPROV-*.wav ; improvised only (as in paper)
+    m = {'N': 'neu', 'H': 'hap', 'S': 'sad', 'A': 'ang'}
+    label = {}
+    ev = next(Path(root).rglob('Evalu*.txt'))
+    for line in open(ev, errors='ignore'):
+        if 'UTD-' in line:
+            label['MSP-' + line.split('.avi')[0][4:]] = line.split('; ')[1][0]
+    rows = []
+    for f in sorted(Path(root).rglob('MSP-IMPROV-*.wav')):
+        parts = f.stem.split('-')
+        if parts[-2][-1:] in ('P', 'R') or label.get(f.stem) not in m: continue
+        spk = parts[-3]
+        rows.append((f, m[label[f.stem]], spk[0], spk))
+    return rows
+
+
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
-    ap.add_argument('--dataset', required=True, choices=['crema-d', 'ravdess', 'emodb'])
+    ap.add_argument('--dataset', required=True, choices=['crema-d', 'ravdess', 'emodb', 'iemocap', 'msp-improv'])
     ap.add_argument('--data_dir', required=True)
     ap.add_argument('--out_dir', default='features/emobase')
     ap.add_argument('--workers', type=int, default=4)
     a = ap.parse_args()
-    rows = {'crema-d': list_crema, 'ravdess': list_ravdess, 'emodb': list_emodb}[a.dataset](a.data_dir)
+    rows = {'crema-d': list_crema, 'ravdess': list_ravdess, 'emodb': list_emodb,
+            'iemocap': list_iemocap, 'msp-improv': list_msp_improv}[a.dataset](a.data_dir)
     with Pool(a.workers) as p:
         feats = p.map(_feat, [r[0] for r in rows], chunksize=16)
     Path(a.out_dir).mkdir(parents=True, exist_ok=True)
