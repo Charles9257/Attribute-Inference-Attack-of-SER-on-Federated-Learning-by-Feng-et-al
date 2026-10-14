@@ -174,7 +174,7 @@ pip install -r requirements.txt
 #  CREMA-D : https://github.com/CheyneyComputerScience/CREMA-D  (AudioWAV/*.wav + VideoDemographics.csv) -> data/crema-d/{wav,VideoDemographics.csv}
 #  RAVDESS : https://zenodo.org/record/1188976 (Audio_Speech_Actors_01-24.zip)                           -> data/ravdess/Actor_*/
 #  EmoDB   : python -c "import audb; audb.load('emodb', version='1.4.1', format='wav', sampling_rate=16000)"  -> data/emodb/wav
-./run_all.sh            # features -> 12 FL+attack settings -> results/summary.md
+./run_all.sh   # features, then 12 FL+attack settings (results/<norm>_norm/summary.md), then the in-domain probe
 
 ```
 
