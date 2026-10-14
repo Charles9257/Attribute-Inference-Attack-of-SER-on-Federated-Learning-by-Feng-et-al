@@ -14,6 +14,8 @@ updates of the private training (`D_p`).
 
 Everything here was re-implemented from the paper and the official code, and it runs on CPU.
 
+A full written report (methodology, experimental design, results, discussion, limitations and research gaps) is in [`report/Reproduction_Report_Feng_et_al.pdf`](report/Reproduction_Report_Feng_et_al.pdf) and [`.docx`](report/Reproduction_Report_Feng_et_al.docx).
+
 ## What was reproduced
 
 | Component | Paper / official code | This reproduction |
