@@ -1,0 +1,6 @@
+torch>=2.0
+numpy
+pandas
+scikit-learn
+opensmile
+audb   # only to download EmoDB
