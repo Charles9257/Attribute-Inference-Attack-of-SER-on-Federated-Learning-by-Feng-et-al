@@ -111,3 +111,35 @@ private fold 0: 72 clients
 private fold 1: 73 clients
   round   0  val_uar 0.443  test_acc 0.485  test_uar 0.473
   round  50  val_uar 0.668  test_acc 0.659  test_uar 0.652
+  round 100  val_uar 0.654  test_acc 0.666  test_uar 0.662
+  round 150  val_uar 0.702  test_acc 0.691  test_uar 0.685
+  round 199  val_uar 0.702  test_acc 0.718  test_uar 0.715
+   {'fold': 2, 'n_updates': 700, 'ser_acc': 0.7067901234567902, 'ser_uar': 0.7045304232804233, 'attack_first_acc': 0.5485714285714286, 'attack_first_uar': 0.5448458869156971, 'attack_first_client_asr': np.float64(0.545068806652207), 'attack_second_acc': 0.5885714285714285, 'attack_second_uar': 0.5866095121453359, 'attack_second_client_asr': np.float64(0.5830744307174606), 'attack_last_acc': 0.5771428571428572, 'attack_last_uar': 0.5766891202286181, 'attack_last_client_asr': np.float64(0.580400034650639)}
+private fold 2: 73 clients
+  round   0  val_uar 0.463  test_acc 0.474  test_uar 0.463
+  round  50  val_uar 0.685  test_acc 0.645  test_uar 0.640
+  round 100  val_uar 0.688  test_acc 0.660  test_uar 0.657
+  round 150  val_uar 0.707  test_acc 0.688  test_uar 0.683
+  round 199  val_uar 0.718  test_acc 0.685  test_uar 0.685
+   {'fold': 3, 'n_updates': 700, 'ser_acc': 0.7037037037037037, 'ser_uar': 0.701058201058201, 'attack_first_acc': 0.5385714285714286, 'attack_first_uar': 0.5400176332288401, 'attack_first_client_asr': np.float64(0.5402751984339415), 'attack_second_acc': 0.5471428571428572, 'attack_second_uar': 0.5478709508881923, 'attack_second_client_asr': np.float64(0.5516168986354322), 'attack_last_acc': 0.5914285714285714, 'attack_last_uar': 0.591692789968652, 'attack_last_client_asr': np.float64(0.6031352008185207)}
+private fold 3: 73 clients
+  round   0  val_uar 0.467  test_acc 0.465  test_uar 0.451
+  round  50  val_uar 0.684  test_acc 0.655  test_uar 0.653
+  round 100  val_uar 0.706  test_acc 0.675  test_uar 0.675
+  round 150  val_uar 0.724  test_acc 0.686  test_uar 0.683
+  round 199  val_uar 0.724  test_acc 0.689  test_uar 0.688
+   {'fold': 4, 'n_updates': 700, 'ser_acc': 0.7006172839506173, 'ser_uar': 0.6975859788359788, 'attack_first_acc': 0.5328571428571428, 'attack_first_uar': 0.5378437089121363, 'attack_first_client_asr': np.float64(0.5436996144691552), 'attack_second_acc': 0.5314285714285715, 'attack_second_uar': 0.5334705310695707, 'attack_second_client_asr': np.float64(0.5328443067363292), 'attack_last_acc': 0.5657142857142857, 'attack_last_uar': 0.5667409821071285, 'attack_last_client_asr': np.float64(0.5735911527813221)}
+private fold 4: 73 clients
+  round   0  val_uar 0.465  test_acc 0.463  test_uar 0.448
+  round  50  val_uar 0.672  test_acc 0.616  test_uar 0.616
+  round 100  val_uar 0.711  test_acc 0.641  test_uar 0.643
+  round 150  val_uar 0.718  test_acc 0.650  test_uar 0.651
+  round 199  val_uar 0.740  test_acc 0.671  test_uar 0.675
+   {'fold': 5, 'n_updates': 700, 'ser_acc': 0.650875386199794, 'ser_uar': 0.6539590254706533, 'attack_first_acc': 0.5528571428571428, 'attack_first_uar': 0.5401018511695691, 'attack_first_client_asr': np.float64(0.5573470289223714), 'attack_second_acc': 0.53, 'attack_second_uar': 0.5223106460671857, 'attack_second_client_asr': np.float64(0.5225774941326916), 'attack_last_acc': 0.5828571428571429, 'attack_last_uar': 0.5797574894177945, 'attack_last_client_asr': np.float64(0.5833701619358347)}
+      fold  n_updates   ser_acc   ser_uar  attack_first_acc  attack_first_uar  attack_first_client_asr  attack_second_acc  attack_second_uar  attack_second_client_asr  attack_last_acc  attack_last_uar  attack_last_client_asr
+0        1      700.0  0.658440  0.651243          0.580000          0.543224                 0.577188           0.590000           0.584326                  0.598840         0.585714         0.582553                0.581753
+1        2      700.0  0.706790  0.704530          0.548571          0.544846                 0.545069           0.588571           0.586610                  0.583074         0.577143         0.576689                0.580400
+2        3      700.0  0.703704  0.701058          0.538571          0.540018                 0.540275           0.547143           0.547871                  0.551617         0.591429         0.591693                0.603135
+3        4      700.0  0.700617  0.697586          0.532857          0.537844                 0.543700           0.531429           0.533471                  0.532844         0.565714         0.566741                0.573591
+4        5      700.0  0.650875  0.653959          0.552857          0.540102                 0.557347           0.530000           0.522311                  0.522577         0.582857         0.579757                0.583370
+5  average      700.0  0.684085  0.681675          0.550571          0.541207                 0.552716           0.557429           0.554918                  0.557791         0.580571         0.579487                0.584450

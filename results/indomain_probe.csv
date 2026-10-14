@@ -1,0 +1,3 @@
+dataset,norm,mode,n_updates,n_speakers,first_uar,second_uar,last_uar
+crema-d,speaker,fed_sgd,1400,72,0.6647114865108305,0.670622429104441,0.6400445711682915
+crema-d,speaker,fed_avg,1400,72,0.6608160699252044,0.6898972697030038,0.6814005072049238
